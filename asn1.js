@@ -3,7 +3,7 @@
 
 'use strict';
 
-var asn1 = require('asn1.js');
+var asn1 = require('@unabandoned/asn1.js');
 
 exports.certificate = require('./certificate');
 
