@@ -4,8 +4,8 @@
 var findProc = /Proc-Type: 4,ENCRYPTED[\n\r]+DEK-Info: AES-((?:128)|(?:192)|(?:256))-CBC,([0-9A-H]+)[\n\r]+([0-9A-z\n\r+/=]+)[\n\r]+/m;
 var startRegex = /^-----BEGIN ((?:.*? KEY)|CERTIFICATE)-----/m;
 var fullRegex = /^-----BEGIN ((?:.*? KEY)|CERTIFICATE)-----([0-9A-z\n\r+/=]+)-----END \1-----$/m;
-var evp = require('evp_bytestokey');
-var ciphers = require('browserify-aes');
+var evp = require('./evp-bytes-to-key');
+var ciphers = require('@unabandoned/browserify-aes');
 var Buffer = require('safe-buffer').Buffer;
 module.exports = function (okey, password) {
 	var key = okey.toString();

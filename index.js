@@ -3,7 +3,7 @@
 var asn1 = require('./asn1');
 var aesid = require('./aesid.json');
 var fixProc = require('./fixProc');
-var ciphers = require('browserify-aes');
+var ciphers = require('@unabandoned/browserify-aes');
 var pbkdf2Sync = require('pbkdf2').pbkdf2Sync;
 var Buffer = require('safe-buffer').Buffer;
 

@@ -3,7 +3,7 @@
 
 'use strict';
 
-var asn = require('asn1.js');
+var asn = require('@unabandoned/asn1.js');
 
 var Time = asn.define('Time', function () {
 	this.choice({

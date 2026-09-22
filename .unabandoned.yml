@@ -1,0 +1,30 @@
+schema: 1
+
+package: "@unabandoned/parse-asn1"
+
+upstream:
+  repo: crypto-browserify/parse-asn1
+  reason: >-
+    released 2025-09-24 and about to cross the abandonment threshold, while
+    shipping evp_bytestokey (2017) and pinning asn1.js to a major behind
+
+summary: >-
+  Parses RSA, DSA and EC private and public keys out of PEM and DER, including
+  the encrypted PKCS#8 forms, and hands back the components signing needs.
+
+why-forked: >-
+  It was the last path by which dead packages re-entered our trees: through it
+  @unabandoned/crypto-browserify pulled upstream browserify-aes 1.2.0, and with
+  it buffer-xor, create-hash and evp_bytestokey. Upstream is not abandoned by
+  the calendar, but it carries 2017 packages and pins asn1.js a major behind,
+  which leaves consumers holding the rot either way.
+
+status: active
+
+used-by:
+  - consumer: "@unabandoned/browserify-sign"
+    purpose: "Reads the private key before signing and the public key before verifying."
+  - consumer: "@unabandoned/crypto-browserify"
+    purpose: "Key parsing behind publicEncrypt and privateDecrypt."
+
+tags: [asn1, pem, der, keys, crypto]
