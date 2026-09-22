@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.2.1](https://github.com/unabandoned/parse-asn1/compare/parse-asn1-v5.2.0...parse-asn1-v5.2.1) (2026-09-22)
+
+
+### Dependencies & maintenance
+
+* drop the inherited funding file ([#4](https://github.com/unabandoned/parse-asn1/issues/4)) ([909d782](https://github.com/unabandoned/parse-asn1/commit/909d7824ffb417edd23a318c550669f0d1d8b79e))
+
 ## [5.2.0](https://github.com/unabandoned/parse-asn1/compare/parse-asn1-v5.1.9...parse-asn1-v5.2.0) (2026-09-22)
 
 
