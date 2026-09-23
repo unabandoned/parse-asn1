@@ -1,6 +1,15 @@
 {
   "name": "@unabandoned/parse-asn1",
   "version": "5.2.2",
+  "files": [
+    "CHANGELOG.md",
+    "aesid.json",
+    "asn1.js",
+    "certificate.js",
+    "evp-bytes-to-key.js",
+    "fixProc.js",
+    "index.js"
+  ],
   "description": "utility library for parsing asn1 files for use with browserify-sign.",
   "main": "index.js",
   "scripts": {
