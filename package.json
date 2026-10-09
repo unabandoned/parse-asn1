@@ -33,7 +33,7 @@
     "@commitlint/config-conventional": "21.2.3"
   },
   "engines": {
-    "node": ">= 0.10"
+    "node": ">=22.12"
   },
   "auto-changelog": {
     "output": "CHANGELOG.md",
