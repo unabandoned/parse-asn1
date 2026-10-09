@@ -26,8 +26,7 @@
     "@unabandoned/asn1.js": "^5.4.1",
     "@unabandoned/browserify-aes": "^1.4.0",
     "@unabandoned/hash.js": "^1.4.0",
-    "pbkdf2": "npm:@unabandoned/pbkdf2@^3.2.1",
-    "safe-buffer": "^5.2.1"
+    "pbkdf2": "npm:@unabandoned/pbkdf2@^3.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "21.2.3",
