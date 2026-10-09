@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.2.3](https://github.com/unabandoned/parse-asn1/compare/parse-asn1-v5.2.2...parse-asn1-v5.2.3) (2026-10-09)
+
+
+### Dependencies & maintenance
+
+* use the buffer module instead of safe-buffer ([#15](https://github.com/unabandoned/parse-asn1/issues/15)) ([f97cdde](https://github.com/unabandoned/parse-asn1/commit/f97cdde53739cc181310f07403bbaa3f4541f3ef))
+
 ## [5.2.2](https://github.com/unabandoned/parse-asn1/compare/parse-asn1-v5.2.1...parse-asn1-v5.2.2) (2026-09-23)
 
 
