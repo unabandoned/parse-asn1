@@ -5,7 +5,7 @@ var aesid = require('./aesid.json');
 var fixProc = require('./fixProc');
 var ciphers = require('@unabandoned/browserify-aes');
 var pbkdf2Sync = require('pbkdf2').pbkdf2Sync;
-var Buffer = require('safe-buffer').Buffer;
+var Buffer = require('buffer').Buffer;
 
 function decrypt(data, password) {
 	var salt = data.algorithm.decrypt.kde.kdeparams.salt;

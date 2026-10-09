@@ -5,7 +5,7 @@
 // which @unabandoned/hash.js provides with no dependencies of its own;
 // depending on the package meant carrying md5.js (2018) and hash-base too.
 
-var Buffer = require('safe-buffer').Buffer;
+var Buffer = require('buffer').Buffer;
 var md5 = require('@unabandoned/hash.js').md5;
 
 function digest(parts) {

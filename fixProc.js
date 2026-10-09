@@ -6,7 +6,7 @@ var startRegex = /^-----BEGIN ((?:.*? KEY)|CERTIFICATE)-----/m;
 var fullRegex = /^-----BEGIN ((?:.*? KEY)|CERTIFICATE)-----([0-9A-z\n\r+/=]+)-----END \1-----$/m;
 var evp = require('./evp-bytes-to-key');
 var ciphers = require('@unabandoned/browserify-aes');
-var Buffer = require('safe-buffer').Buffer;
+var Buffer = require('buffer').Buffer;
 module.exports = function (okey, password) {
 	var key = okey.toString();
 	var match = key.match(findProc);
