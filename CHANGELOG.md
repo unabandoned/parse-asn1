@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.2.4](https://github.com/unabandoned/parse-asn1/compare/parse-asn1-v5.2.3...parse-asn1-v5.2.4) (2026-10-09)
+
+
+### Bug Fixes
+
+* require Node &gt;=22.12 in engines, as the runtime tree does ([#18](https://github.com/unabandoned/parse-asn1/issues/18)) ([6cf1577](https://github.com/unabandoned/parse-asn1/commit/6cf1577156c7247196e45dcc6b3e94fcf325cb3e))
+
 ## [5.2.3](https://github.com/unabandoned/parse-asn1/compare/parse-asn1-v5.2.2...parse-asn1-v5.2.3) (2026-10-09)
 
 
