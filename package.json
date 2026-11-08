@@ -1,6 +1,6 @@
 {
   "name": "@unabandoned/parse-asn1",
-  "version": "5.2.4",
+  "version": "5.2.5",
   "files": [
     "CHANGELOG.md",
     "aesid.json",

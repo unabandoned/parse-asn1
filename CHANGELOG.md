@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.2.5](https://github.com/unabandoned/parse-asn1/compare/parse-asn1-v5.2.4...parse-asn1-v5.2.5) (2026-11-08)
+
+
+### Bug Fixes
+
+* bound the PBKDF2 iteration count read from encrypted PKCS[#8](https://github.com/unabandoned/parse-asn1/issues/8) keys ([#26](https://github.com/unabandoned/parse-asn1/issues/26)) ([64b4b53](https://github.com/unabandoned/parse-asn1/commit/64b4b531f4b98127edebccee835a02e98e410725))
+
 ## [5.2.4](https://github.com/unabandoned/parse-asn1/compare/parse-asn1-v5.2.3...parse-asn1-v5.2.4) (2026-10-09)
 
 
