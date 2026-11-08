@@ -8,6 +8,35 @@ upstream:
     released 2025-09-24 and about to cross the abandonment threshold, while
     shipping evp_bytestokey (2017) and pinning asn1.js to a major behind
 
+  # Upstream commits looked at, so the drift report stops re-reporting them and
+  # a genuinely new commit stands out.
+  reviewed:
+    - sha: f7d0f6fc
+      decision: declined
+      note: >-
+        sets cache-mode in upstream's require-allow-edits.yml, a workflow this
+        fork does not have; our CI is the shared reusable workflows
+    - sha: 816b8f80
+      decision: ported
+      note: >-
+        caps the PBKDF2 iteration count read from an encrypted PKCS#8 key's
+        unauthenticated params at 1..10000000 (GHSA-4x79-9w89-pmm5); the
+        index.js check and README note apply unchanged, the test runs on
+        test/tape.js
+    - sha: "78978812"
+      decision: declined
+      note: >-
+        bumps @ljharb/eslint-config, auto-changelog, eslint, npmignore and tape,
+        dev tooling this fork does not carry; Renovate manages ours
+    - sha: cf487cac
+      decision: declined
+      note: >-
+        raises pbkdf2 to ^3.1.7; ours resolves to npm:@unabandoned/pbkdf2@^3.2.1,
+        the org's fork, whose upstream commits are all reviewed
+    - sha: 0d0c5dcd
+      decision: declined
+      note: "upstream's v5.1.10 version bump; versions here come from release-please"
+
 summary: >-
   Parses RSA, DSA and EC private and public keys out of PEM and DER, including
   the encrypted PKCS#8 forms, and hands back the components signing needs.
